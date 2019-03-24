@@ -12,7 +12,7 @@ for n = 1:N
 end
 
 tifFiles = dir([char(directories(1)), '/*.tif']);    % tif-files in folder 1
-numFiles = length(tifFiles);                        % Number of tif-files
+numFiles = length(tifFiles);                         % Number of tif-files
 
 
 
@@ -22,8 +22,9 @@ for i = 1:numFiles
 
     for j = 1:N
         % Iterate through all the files & sum all the image versions
-        currentFilename = strcat(directories(j,1), '/', tifFiles(i).name);
-        currentImage = currentImage + Tif2Bin(currentFilename);
+        [filepath, name, ext] = fileparts(tifFiles(i).name);    % extract filename
+        currentFilename = strcat(directories(j,1), '/', name, ext);
+        currentImage = currentImage + Tif2Bin(currentFilename, name);
         
         
     end

@@ -1,0 +1,10 @@
+./checkpoints/pre_model-0
+./checkpoints/pre_model-10
+./checkpoints/pre_model-20
+./checkpoints/pre_model-30
+./checkpoints/pre_model-40
+./checkpoints/pre_model-50
+./checkpoints/pre_model-60
+./checkpoints/pre_model-70
+./checkpoints/pre_model-80
+./checkpoints/pre_model-90
